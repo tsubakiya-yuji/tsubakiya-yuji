@@ -1,10 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro';
+import Nav from '../components/Nav.astro';
+import Thoughts from '../components/Thoughts.astro';
+import Dialogue from '../components/Dialogue.astro';
+import Policy from '../components/Policy.astro';
+import Profile from '../components/Profile.astro';
+import ProfileSub from '../components/ProfileSub.astro';
+import Support from '../components/Support.astro';
+import FixedLine from '../components/FixedLine.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="椿谷勇次 | 秋田県小坂町町長選挙立候補者">
-	<main>
-		<p class="lg:text-cyan-400 md:text-slate-500 md:text-lg text-base text-white">aaaaaa</p>
+<Layout title="つばきや勇次 | 秋田県小坂町選挙立候補者">
+	<main class="relative">
+		<Hero />
+		<Nav />
+		<Thoughts />
+		<Dialogue />
+		<Policy />
+		<Profile />
+		<ProfileSub />
+		<Support />
+		<FixedLine />
 	</main>
+	<Footer />
 </Layout>

@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import tsubakiyaYuji from '../images/profile/tsubakiya-yuji02.png';
+---
+
+<section id="profile" class="pb-4 md:pt-24 md:pb-16">
+	<div class="w-full md:max-w-container md:px-6 mx-auto">
+		<div class="md:rounded-3xl md:border-4 border-accent border-solid">
+			<div
+				class="relative bg-gradient-to-r from-accent via-orange-600 via-90% to-orange-400 px-4 py-12 md:py-8 md:px-9 md:rounded-tl-[20px] md:rounded-tr-[20px]"
+			>
+				<p class="md:text-6xl text-3xl text-white font-bold mb-2 md:mb-4">
+					ばきや勇次
+				</p>
+				<h2
+					class="text-base md:text-[21px] font-bold px-2 py-[5px] md:py-3 md:px-4 text-accent bg-white rounded inline-block"
+				>
+					プロフィール
+				</h2>
+				<Image
+					class="h-[120%] absolute bottom-0 right-0 md:h-[180%] w-auto object-contain"
+					src={tsubakiyaYuji}
+					alt="椿谷勇次"
+				/>
+			</div>
+			<div class="px-4 py-8 md:px-9">
+				<h3 class="text-[21px] font-bold mb-[10px]">経歴</h3>
+				<div class="md:mb-8">
+					<p class="text-base md:text-lg mb-4">
+						1986年2月生まれ 銀山町在住<br />
+						小坂小中学校・大館商業高校卒業
+					</p>
+					<div
+						class="[&>p]:text-base grid gap-x-8 gap-y-[9px] grid-cols-1 md:grid-cols-[auto_1fr] grid-rows-[auto] [&>h4]:text-base md:[&>h4]:text-lg [&>h4]:font-bold md:[&>p]:text-lg"
+					>
+						<h4>2004年</h4>
+						<p>
+							株式会社セブンイレブン（現　株式会社セブン&アイ・ホールディングス）入社
+						</p>
+						<h4>2007年</h4>
+						<p>
+							株式会社ヤッパ入社　財務経理部長、経営管理部長。株式会社スタートトゥデイ（現　株式会社ZOZO）へのM&Aを担当
+						</p>
+						<h4>2014年</h4>
+						<p>
+							株式会社スタートトゥデイ工務店（現　株式会社ZOZO NEXT)
+							経営管理部親方。エンジニア・デザイナー採用担当。
+						</p>
+						<h4>2018年</h4>
+						<p>Hamee株式会社入社　みらい創造部マネージャー</p>
+						<h4>2021年</h4>
+						<p>ビーサイズ株式会社　子ども見守りGPSサービスの管理部門管掌CFO</p>
+						<h4>2021年</h4>
+						<p>
+							一般財団法人八三財団設立理事。神奈川県小田原市のクリエイティブワークスペースARUYO
+							ODAWARA責任者。創業支援・ローカリドリブン担当。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="px-4 py-8 md:px-9 bg-policy-bg">
+				<h3 class="text-[21px] font-bold mb-[10px]">QRコード</h3>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+					<figure>
+						<figcaption>公式サイト</figcaption><img
+							src="https://placehold.jp/200x200.png"
+							alt=""
+						/>
+					</figure>
+					<figure>
+						<figcaption>X(旧Twitter)</figcaption><img
+							src="https://placehold.jp/200x200.png"
+							alt=""
+						/>
+					</figure>
+					<figure>
+						<figcaption>LINE</figcaption><img
+							src="https://placehold.jp/200x200.png"
+							alt=""
+						/>
+					</figure>
+				</div>
+			</div><div class="px-4 py-8 md:px-9">
+				<h3 class="text-[21px] font-bold mb-[10px]">趣味</h3>
+				<p>飲み会、サウナ、ゲーム（DbD)</p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,57 @@
+---
+import { Image } from 'astro:assets';
+import Line from '../images/support/line-account.svg';
+import Twitter from './Twitter.astro';
+---
+
+<section id="support" class="pt-8 md:pt-24 pb-16 bg-policy-bg">
+	<div class="max-w-container px-4 md:px-6 mx-auto">
+		<h2 class="font-bold text-3xl md:text-[33px] text-center mb-9">
+			<span
+				class="font-rounded block md:inline text-[21px] md:text-[32px] mb-2 md:mb-0"
+				>ぜひ､</span
+			><span class="text-[45px] md:text-[50px] text-accent">つばきや</span>勇次 <span
+				class="font-rounded text-[21px] block md:inline md:text-[32px] mt-3 md:mt-0"
+				>とつながってください !</span
+			>
+		</h2>
+		<div class="grid gap-6 grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[auto]">
+			<div
+				class="p-6 rounded-3xl flex justify-between bg-[#00a73c] text-white h-fit"
+			>
+				<div>
+					<h3 class="mb-5">
+						<Image src={Line} class="h-6 w-full" alt="LINE公式アカウント" />
+					</h3>
+					<p class="text-base font-bold mb-4">
+						つばきや勇次に関する<br />
+						最新情報をお届け！
+					</p>
+					<p class="text-base font-bold mb-4">ぜひご登録ください。</p>
+					<a
+						href=""
+						class="text-base inline-block font-bold py-3 px-6 text-[#00a73c] bg-white rounded-full"
+					>
+						登録はこちらから！</a
+					>
+				</div>
+				<div class="hidden md:block">
+					<figure>
+						<img
+							src="https://placehold.jp/120x120.png"
+							class="mb-2"
+							alt="公式LINEのQRコード"
+						/><figcaption class="text-center text-xs font-bold">
+							QRコード
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div>
+				<Twitter
+					url="https://x.com/camelliayuji?s=21&t=hO0KxUf24eiqrm2ByL08OA"
+				/>
+			</div>
+		</div>
+	</div>
+</section>

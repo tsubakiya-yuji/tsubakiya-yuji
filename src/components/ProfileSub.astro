@@ -1,0 +1,84 @@
+---
+import { Image } from 'astro:assets';
+import image01 from '../images/profile/image01.jpg';
+import image02 from '../images/profile/image02.jpg';
+import image03 from '../images/profile/image03.jpg';
+---
+
+<section class="pt-4 pb-8 md:pt-24 md:pb-16">
+	<div class="max-w-container px-4 md:px-6 mx-auto">
+		<h2 class="font-bold text-3xl md:text-[33px] text-center mb-9">
+			<span class="text-[45px] md:text-[50px] text-accent">つばきや</span
+			>勇次<span
+				class="font-rounded text-[21px] md:text-[32px] mt-3 md:mt-0 block md:inline"
+				>が町長を志すまで</span
+			>
+		</h2>
+		<h3
+			class="text-lg py-3 px-6 font-bold bg-accent text-white text-center max-w-[500px] rounded-full mx-auto"
+		>
+			セブンイレブン・旧ライブドアオート・ヤッパ時代
+		</h3>
+		<div
+			class="grid grid-cols-1 md:grid-cols-profile gap-6 mt-7 mb-10 md:mt-14 md:mb-20"
+		>
+			<p class="text-base md:text-lg">
+				大学に行く費用が無かったので高卒で働きはじめる。毎日9:00-24:00まで働く。田舎から何も知らない状態で、IT業界に飛び込みイロハを学ぶ。
+			</p>
+			<Image
+				src={image01}
+				alt=""
+				class="mx-auto md:mx-[unset] max-w-full md:max-w-[320px] max-h-[230px] md:max-h-[320px] object-cover rounded-xl"
+			/>
+		</div>
+		<h3
+			class="text-lg py-3 px-6 font-bold bg-accent text-white text-center max-w-[500px] rounded-full mx-auto"
+		>
+			ZOZO時代
+		</h3>
+		<div
+			class="grid grid-cols-1 md:grid-cols-profile gap-6 mt-7 mb-10 md:mt-14 md:mb-20"
+		>
+			<p class="text-base md:text-lg">
+				将来的に小坂町の町長を志していた時期に、地元が千葉の経営者に、総理大臣にはならないの？と言われ、ハッとする。自分の身の回り地域の笑顔を増やすことを小さく始めていくが、それを広げていくことを肝に銘じる。自分の半径50mから始め、次に小坂町。それ以上に。
+			</p>
+			<Image
+				src={image02}
+				alt=""
+				class="mx-auto md:mx-[unset] max-w-full md:max-w-[320px] max-h-[230px] md:max-h-[320px] object-cover rounded-xl"
+			/>
+		</div>
+		<h3
+			class="text-lg py-3 px-6 font-bold bg-accent text-white text-center max-w-[500px] rounded-full mx-auto"
+		>
+			小田原時代
+		</h3>
+		<div
+			class="grid grid-cols-1 md:grid-cols-profile gap-6 mt-7 mb-10 md:mt-14 md:mb-20"
+		>
+			<div>
+				<p class="text-base md:text-lg mb-4 md:mb-0">
+					活動の拠点を小田原に移し、地域コミュニティに携わる。小田原市から委託を受けて、クリエイティブワークスペースのARUYOODAWARAを運営しております。<br
+					/>
+					<a href="https://aruyo.me/" class="text-accent" target="_blank"
+						>https://aruyo.me/</a
+					>
+				</p>
+				<p class="text-base md:text-lg max-w-[800px] mx-auto">
+					神奈川県庁から委託を受けて、起業家育成チャレンジャープログラムを運営している、一般財団法人八三財団の理事。<br
+					/>
+					<a
+						href="https://www.83foundation.org/"
+						class="text-accent"
+						target="_blank">https://www.83foundation.org/</a
+					>
+				</p>
+			</div>
+			<Image
+				src={image03}
+				alt=""
+				class="mx-auto md:mx-[unset] max-w-full md:max-w-[320px] max-h-[230px] md:max-h-[320px] object-cover rounded-xl"
+			/>
+		</div>
+	</div>
+</section>

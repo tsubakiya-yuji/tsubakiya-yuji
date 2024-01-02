@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import tsubakiyaYuji from '../images/hero/tsubakiya-yuji.png';
+---
+
+<section class="mb-1">
+	<div
+		class="h-[60vw] overflow-hidden min-h-[600px] md:min-h-[700px] pt-8 md:pt-52 bg-gradient-to-r from-accent via-orange-400 via-90% to-orange-400 relative after:w-full after:h-[30vw] after:max-h-[360px] after:content-[''] after:-mb-[1px] after:absolute after:top-auto after:bottom-[0%] after:left-[0%] after:right-[0%] after:bg-hero-pattern after:bg-cover after:bg-[0_0]"
+	>
+		<Image
+			class="absolute -bottom-[70px] md:bottom-0 -right-8 h-[90%] w-auto object-contain"
+			src={tsubakiyaYuji}
+			alt="椿谷勇次"
+		/>
+		<div
+			class="max-w-container md:max-w-[850px] xl:max-w-container px-6 mx-auto relative"
+		>
+			<p
+				class="text-white mb-2 md:mb-[10px] text-[19px] md:text-[26px] font-bold"
+			>
+				秋田県小坂町選挙立候補者
+			</p>
+			<p class="text-white mb-2 md:mb-8 text-6xl md:text-8xl font-bold">
+				つばきや<span class="block">勇次</span>
+			</p>
+			<p class="text-white text-[19px] md:text-3xl font-bold">37歳の挑戦！</p>
+		</div>
+	</div>
+</section>

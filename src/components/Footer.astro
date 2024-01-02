@@ -1,0 +1,14 @@
+<footer class="mb-16 md:mb-0">
+	<div
+		class="max-w-container px-4 md:px-6 mx-auto h-14 flex justify-center items-center"
+	>
+		<small id="copyright">© 2023, つばきや勇次</small>
+	</div>
+</footer>
+<script>
+	const currentYear = new Date().getFullYear();
+	const id = document.getElementById('copyright');
+	if (id) {
+		id.innerHTML = '© ' + currentYear + ', つばきや勇次';
+	}
+</script>
