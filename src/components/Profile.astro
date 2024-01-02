@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import tsubakiyaYuji from '../images/profile/tsubakiya-yuji02.png';
+import TsubakiyaYuji from '../images/profile/tsubakiya-yuji02.png';
+import Qr1 from '../images/profile/qr-tsubakiyayuji.png';
+import Qr2 from '../images/profile/qr-83.jpg';
+import Qr3 from '../images/profile/qr-line.jpg';
 ---
 
 <section id="profile" class="pb-4 md:pt-24 md:pb-16">
@@ -19,7 +22,7 @@ import tsubakiyaYuji from '../images/profile/tsubakiya-yuji02.png';
 				</h2>
 				<Image
 					class="h-[120%] absolute bottom-0 right-0 md:h-[180%] w-auto object-contain"
-					src={tsubakiyaYuji}
+					src={TsubakiyaYuji}
 					alt="椿谷勇次"
 				/>
 			</div>
@@ -62,21 +65,27 @@ import tsubakiyaYuji from '../images/profile/tsubakiya-yuji02.png';
 				<h3 class="text-[21px] font-bold mb-[10px]">QRコード</h3>
 				<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
 					<figure>
-						<figcaption>公式サイト</figcaption><img
-							src="https://placehold.jp/200x200.png"
-							alt=""
+						<figcaption>公式サイト</figcaption>
+						<Image
+							src={Qr1}
+							alt="つばきや勇次公式ホームページのQRコード"
+							class="w-[200px]"
 						/>
 					</figure>
 					<figure>
-						<figcaption>X(旧Twitter)</figcaption><img
-							src="https://placehold.jp/200x200.png"
-							alt=""
+						<figcaption>83財団ホームページ</figcaption>
+						<Image
+							src={Qr2}
+							alt="83財団公式ホームページのQRコード"
+							class="w-[200px]"
 						/>
 					</figure>
 					<figure>
-						<figcaption>LINE</figcaption><img
-							src="https://placehold.jp/200x200.png"
-							alt=""
+						<figcaption>公式LINE</figcaption>
+						<Image
+							src={Qr3}
+							alt="つばきや勇次公式LINEのQRコード"
+							class="w-[200px]"
 						/>
 					</figure>
 				</div>
