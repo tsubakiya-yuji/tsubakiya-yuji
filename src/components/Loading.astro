@@ -11,13 +11,11 @@
 
 <script>
 	window.onload = function () {
-		setTimeout(function () {
-			const spinner = document.getElementById('loading');
-			if (!spinner) {
-				return;
-			}
-			document.body.classList.remove('overflow-hidden');
-			spinner.classList.add('opacity-0', 'invisible');
-		}, 5000);
+		const spinner = document.getElementById('loading');
+		if (!spinner) {
+			return;
+		}
+		document.body.classList.remove('overflow-hidden');
+		spinner.classList.add('opacity-0', 'invisible');
 	};
 </script>
