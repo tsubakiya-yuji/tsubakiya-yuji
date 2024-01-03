@@ -1,15 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import image01 from '../images/dialogue/image01.jpg';
+import image02 from '../images/dialogue/image02.jpg';
+import image03 from '../images/dialogue/image03.jpg';
+---
+
 <section id="dialogue" class="mb-20 md:mb-24">
 	<div class="max-w-container px-4 md:px-6 mx-auto">
 		<div class="grid gap-1 grid-cols-3">
-			<img
-				src="https://placehold.jp/300x400.png"
-				class="rounded-tl-xl rounded-bl-xl"
+			<Image
+				src={image01}
+				class="rounded-tl-xl rounded-bl-xl max-h-[350px] h-full object-cover"
 				alt=""
 			/>
-			<img src="https://placehold.jp/300x400.png" alt="" />
-			<img
-				src="https://placehold.jp/300x400.png"
-				class="rounded-tr-xl rounded-br-xl"
+			<Image
+				src={image02}
+				class="max-h-[350px] h-full object-cover object-[63%]"
+				alt=""
+			/>
+			<Image
+				src={image03}
+				class="rounded-tr-xl rounded-br-xl max-h-[350px] h-full object-cover"
 				alt=""
 			/>
 		</div>
