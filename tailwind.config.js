@@ -8,6 +8,7 @@ export default {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/images/hero/hero-pattern.svg')",
+				emblem: "url('/src/images/thoughts/emblem-kosaka.svg')",
 				'policy-pattern': 'linear-gradient(#fff,transparent 31%)',
 				'policy-pattern02': 'linear-gradient(0deg, #87000C, transparent 25%)',
 				'policy-bg':

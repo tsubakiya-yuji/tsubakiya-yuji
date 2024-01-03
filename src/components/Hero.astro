@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import tsubakiyaYuji from '../images/hero/tsubakiya-yuji.png';
+import message from '../images/hero/image-hero-mesage.svg';
 ---
 
-<section class="mb-1">
+<section class="mb-5 md:mb-10">
 	<div
 		class="h-[60vw] overflow-hidden min-h-[600px] md:min-h-[700px] pt-8 md:pt-52 bg-gradient-to-r from-accent via-orange-400 via-90% to-orange-400 relative after:w-full after:h-[30vw] after:max-h-[360px] after:content-[''] after:-mb-[1px] after:absolute after:top-auto after:bottom-[0%] after:left-[0%] after:right-[0%] after:bg-hero-pattern after:bg-cover after:bg-[0_0]"
 	>
@@ -25,5 +26,10 @@ import tsubakiyaYuji from '../images/hero/tsubakiya-yuji.png';
 			</p>
 			<p class="text-white text-[19px] md:text-3xl font-bold">37歳の挑戦！</p>
 		</div>
+		<Image
+			class="absolute bottom-0 right-[50px] md:right-[130px] h-40 md:h-60 w-auto object-contain z-40"
+			src={message}
+			alt="あなたと創る小坂の未来"
+		/>
 	</div>
 </section>

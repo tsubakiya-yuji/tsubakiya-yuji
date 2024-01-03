@@ -1,13 +1,16 @@
 ---
 import { Image } from 'astro:assets';
-import mainImage from '../images/policy/image-policy.jpg';
+import MainImage from '../images/policy/image-policy.jpg';
+import Target01 from '../images/policy/image-policy01.svg';
+import Target02 from '../images/policy/image-policy02.svg';
+import Target03 from '../images/policy/image-policy03.svg';
 ---
 
 <section id="policy" class="bg-policy-bg">
 	<div class="max-w-container px-4 md:px-6 mx-auto">
 		<div class="mx-[calc(50%-50vw)] w-screen relative">
 			<Image
-				src={mainImage}
+				src={MainImage}
 				alt=""
 				class='relative w-full before:absolute before:content-[""] before:bottom-0 before:left-0 before:w-full before:bg-accent before:h-20'
 			/>
@@ -16,13 +19,13 @@ import mainImage from '../images/policy/image-policy.jpg';
 			<h2
 				class="absolute bottom-0 text-white w-full leading-none indent-[0.4em] tracking-[0.4em] md:indent-[0.3em] md:tracking-[0.3em] text-justify md:text-center text-[11vw] md:text-[6vw] font-bold"
 			>
-				あなたと創る小坂町の未来
+				あなたと創る小坂の未来
 			</h2>
 		</div>
 		<div
-			class="grid grid-cols-1 md:grid-cols-policy gap-[34px_24px] pt-16 pb-16 md:pb-32"
+			class="grid grid-cols-1 items-center md:grid-cols-policy gap-4 md:gap-[34px_24px] pt-8 pb-8 md:pt-16 md:pb-32"
 		>
-			<h3>先輩世代と一緒に創るのは</h3>
+			<h3><Image src={Target01} alt="" class="0" /></h3>
 			<ul
 				class="[&>li]:text-base [&>li]:leading-7 [&>li]:before:text-3xl md:[&>li]:text-[21px] md:[&>li]:leading-[35px] [&>li]:pl-[2em] [&>li]:font-bold [&>li]:relative [&>li]:before:absolute [&>li]:before:left-0 [&>li]:before:h-[1em] [&>li]:before:flex [&>li]:before:items-center [&>li]:before:content-['⚫︎'] [&>li]:before:text-accent md:[&>li]:before:text-4xl"
 			>
@@ -31,7 +34,7 @@ import mainImage from '../images/policy/image-policy.jpg';
 				<li>生活の環境整備。〇〇</li>
 				<li>クマ対策</li>
 			</ul>
-			<h3>現役世代と一緒に創るのは</h3>
+			<h3><Image src={Target02} alt="" class="0" /></h3>
 			<ul
 				class="[&>li]:text-base [&>li]:leading-7 [&>li]:before:text-3xl md:[&>li]:text-[21px] md:[&>li]:leading-[35px] [&>li]:pl-[2em] [&>li]:font-bold [&>li]:relative [&>li]:before:absolute [&>li]:before:left-0 [&>li]:before:h-[1em] [&>li]:before:flex [&>li]:before:items-center [&>li]:before:content-['⚫︎'] [&>li]:before:text-accent md:[&>li]:before:text-4xl"
 			>
@@ -44,7 +47,7 @@ import mainImage from '../images/policy/image-policy.jpg';
 				<li>IT関連予算の見直し</li>
 				<li>ふるさと納税強化による税収増加</li>
 			</ul>
-			<h3>未来世代と一緒に創るのは</h3>
+			<h3><Image src={Target03} alt="" class="0" /></h3>
 			<ul
 				class="[&>li]:text-base [&>li]:leading-7 [&>li]:before:text-3xl md:[&>li]:text-[21px] md:[&>li]:leading-[35px] [&>li]:pl-[2em] [&>li]:font-bold [&>li]:relative [&>li]:before:absolute [&>li]:before:left-0 [&>li]:before:h-[1em] [&>li]:before:flex [&>li]:before:items-center [&>li]:before:content-['⚫︎'] [&>li]:before:text-accent md:[&>li]:before:text-4xl"
 			>
