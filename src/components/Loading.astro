@@ -1,0 +1,23 @@
+<div
+	id="loading"
+	class="w-[100vw] h-[100vh] bg-white transition-all duration-1000 fixed top-0 left-0 z-[100]"
+>
+	<div class="flex justify-center items-center h-full" aria-label="読み込み中">
+		<div class="animate-ping h-2 w-2 bg-accent rounded-full"></div>
+		<div class="animate-ping h-2 w-2 bg-accent rounded-full mx-4"></div>
+		<div class="animate-ping h-2 w-2 bg-accent rounded-full"></div>
+	</div>
+</div>
+
+<script>
+	window.onload = function () {
+		setTimeout(function () {
+			const spinner = document.getElementById('loading');
+			if (!spinner) {
+				return;
+			}
+			document.body.classList.remove('overflow-hidden');
+			spinner.classList.add('opacity-0', 'invisible');
+		}, 5000);
+	};
+</script>
