@@ -3,18 +3,20 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 }
-
 const { title } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, 'https://tsubakiyayuji.com/');
+const ogpImageURL = new URL('/ogp.png', canonicalURL);
 ---
 
 <!doctype html>
 <html lang="ja" class="bg-white scroll-smooth">
-	<head>
+	<head prefix="og: https://ogp.me/ns#">
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
 			content="小坂町をもっといい未来へ、小坂町に子どもの笑い声を。小坂町民に限らず、元町民の方、全く小坂を知らない人でも、小坂町を一緒に創っていきませんか？どうかあなたの力を貸してください。"
 		/>
+		<meta property="og:image" content={ogpImageURL} />
 		<meta name="viewport" content="width=device-width" />
 		<link
 			rel="apple-touch-icon"
