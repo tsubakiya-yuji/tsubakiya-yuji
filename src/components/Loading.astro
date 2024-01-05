@@ -1,6 +1,6 @@
 <div
 	id="loading"
-	class="w-[100vw] h-[100vh] bg-white transition-all duration-1000 fixed top-0 left-0 z-[100]"
+	class="w-[100vw] h-[100vh] bg-white opacity-100 visible transition-all duration-1000 fixed top-0 left-0 z-[100]"
 >
 	<div class="flex justify-center items-center h-full" aria-label="読み込み中">
 		<div class="animate-ping h-2 w-2 bg-accent rounded-full"></div>
@@ -17,6 +17,7 @@
 		}
 		setTimeout(function () {
 			document.body.classList.remove('overflow-hidden');
+			spinner.classList.remove('opacity-100', 'visible');
 			spinner.classList.add('opacity-0', 'invisible');
 		}, 1000);
 	});
