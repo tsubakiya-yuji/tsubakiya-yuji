@@ -58,7 +58,7 @@ import Bars3 from 'astro-heroicons/solid/Bars3.astro';
 	}
 	#menuContent.active {
 		display: block;
-		height: calc(100svh - 4rem);
+		height: calc(100dvh - 4rem);
 		top: 0;
 		display: flex;
 		align-items: center;
@@ -75,6 +75,10 @@ import Bars3 from 'astro-heroicons/solid/Bars3.astro';
 	}
 	#menuContent.active ul li:last-child {
 		border-bottom: none;
+	}
+	body:has(#menuContent.active) {
+		overflow: hidden;
+		height: 100vh;
 	}
 </style>
 
