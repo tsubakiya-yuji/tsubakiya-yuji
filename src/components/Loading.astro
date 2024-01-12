@@ -10,15 +10,12 @@
 </div>
 
 <script>
-	const spinner = document.getElementById('loading');
-	window.addEventListener('load', () => {
+	document.addEventListener('DOMContentLoaded', () => {
+		const spinner = document.getElementById('loading');
 		if (!spinner) {
 			return;
 		}
-		setTimeout(function () {
-			document.body.classList.remove('overflow-hidden');
-			spinner.classList.add('opacity-0', 'invisible');
-			spinner.classList.remove('opacity-100', 'visible');
-		}, 1000);
+		document.body.classList.remove('overflow-hidden');
+		spinner.classList.add('opacity-0', 'invisible');
 	});
 </script>
