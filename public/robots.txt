@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsubakiyayuji.com/sitemap-index.xml
