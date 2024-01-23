@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import saito from '../images/recommend/saito.png';
+---
+
+<section class="pt-12 pb-12 md:pt-24 md:pb-16">
+	<div class="max-w-container px-4 md:px-6 mx-auto">
+		<h2
+			class="font-bold text-3xl md:text-[33px] text-center mb-9 leading-[2.7rem]"
+		>
+			<span class="text-[45px] md:text-[50px] text-accent">つばきや</span
+			>勇次<span class="font-rounded text-[21px] md:text-[32px] mt-3 md:mt-0"
+				>を、<br />小坂町の未来を変えるリーダーに！</span
+			>
+		</h2>
+		<div
+			class="flex flex-col md:flex-row justify-between gap-8 md:gap-16 items-center md:items-start"
+		>
+			<div>
+				<p class="text-base md:text-lg mb-6">
+					少子高齢化が到来したこの日本で、地方の未来をより明るいものに変える街づくりは簡単なことではありません。だからこそ、つばきやさんに託していただきたい。
+				</p>
+				<p class="text-base md:text-lg mb-6">
+					38才という年齢は、ぶどうに例えるなら、フレッシュさと成熟さをバランス良く兼ね備え、収穫するには絶好のタイミング。
+					ビジネスマンとしても一騎当千の彼が、これまでの知見を活かし、さらなる活躍の場として選択するのは、地元小坂町での貢献です。
+					<span class="bg-[#fff080] font-bold"
+						>彼のその決断は、私と出会った10年前からの揺るがぬ想いです。</span
+					>
+				</p>
+				<p class="text-base md:text-lg mb-6">
+					これからは人生100年時代。<span class="bg-[#fff080] font-bold"
+						>誰もが、何歳になっても若々しく活躍できる街の仕組みづくりが必要です。また、テクノロジーを上手に活用すれば、地方ならではの魅力を国内外に発信し、街の収入を増やすことも可能な時代です。</span
+					>
+				</p>
+				<p class="text-base md:text-lg mb-6">
+					小坂町の未来を変える。
+					<span class="bg-[#fff080] font-bold"
+						>そんな新しい時代の街づくりには、ビジネスの知見と地元愛溢れるリーダーの存在が不可欠。</span
+					>だからこそ、つばきやさんに託すべき。私はそう思います。
+				</p>
+				<p>
+					<span class="text-xl">齊藤修一</span><br />
+					株式会社ベルク 取締役<br />
+					一般財団法人 八三財団 代表理事
+				</p>
+			</div>
+			<Image
+				src={saito}
+				alt="齊藤修一"
+				class="w-[320px] h-[320px] object-cover object-[top_-40px_left_50%] md:w-[300px] md:h-auto rounded-xl"
+			/>
+		</div>
+	</div>
+</section>
