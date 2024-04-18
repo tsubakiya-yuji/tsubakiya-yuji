@@ -7,6 +7,8 @@ export default {
 				accent: '#87000C',
 			},
 			backgroundImage: {
+				'greeting-heading': "url('/src/images/greeting/greeting_heading.png')",
+				'greeting-bg': "url('/src/images/greeting/greeting_bg.png')",
 				'hero-pattern': "url('/src/images/hero/hero-pattern.svg')",
 				emblem: "url('/src/images/thoughts/emblem-kosaka.svg')",
 				'policy-pattern': 'linear-gradient(#fff,transparent 31%)',
